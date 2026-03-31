@@ -1,0 +1,158 @@
+/* Aqui começa o estilo do corpo inteiro da página. Pense nisso como o cenário escuro do filme. */
+body {
+    background-color: #0b1428; /* fundo ajustado para escuro e mais uniforme com a logo */
+    color: #fff; /* letras brancas para ler fácil */
+    margin: 0; /* tirar espaçamento padrão do navegador */
+    display: flex; /* centra tudo no meio da tela */
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* ocupa toda a altura da janela */
+    font-family: 'Geist', sans-serif;
+}
+
+/* Logo principal Pipoca Flix na tela de perfis (wordmark) */
+.logo-header {
+    width: 100%; /* ocupa a largura total da área de conteúdo */
+    display: flex; /* organiza seus filhos em linha (esquerda pra direita) */
+    justify-content: flex-start; /* mantém o logo alinhado à esquerda */
+    margin-bottom: 20px; /* espaçamento para baixo antes do título */
+}
+
+.logo-site {
+    color: #acd2d3; /* cor do texto do logo antes do hover */
+    text-decoration: none; /* remove sublinhado de link */
+    padding: 12px 16px; /* espaçamento interno para área de clique melhor */
+    border-radius: 6px; /* borda arredondada suave */
+    box-shadow: 0px 0px 25px rgb(39, 38, 38); /* brilho leve ao redor */
+    transform: translateY(-50px); /* eleva o logo, parece flutuando */
+}
+
+.logo-text {
+    font-family: 'Bebas Neue', 'Helvetica Neue', Arial, sans-serif; /* fonte estilizada para wordmark */
+    font-size: 2.1rem; /* texto grande pra chamar atenção */
+    font-weight: 700; /* negrito para impacto */
+    letter-spacing: 2px; /* aumenta espaço entre letras, look moderno */
+    text-transform: uppercase; /* deixa tudo maiúsculo, mais forte */
+    color: #abceca; /* cor clara com contraste no fundo escuro */
+}
+
+
+
+@media (max-width: 768px) {
+    /* se a tela for pequena tipo celular, reduz o tamanho da logo para ficar bonito */
+    .logo-text {
+        font-size: 1.7rem;
+    }
+
+    /* sobe menos o logo para não ficar estranho no mobile */
+    .logo-site {
+        transform: translateY(-4px);
+    }
+}
+
+/* Área principal com todos os perfis */
+.conteudo-principal {
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3.5vw;
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.lista-perfis {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2vw;
+    margin-bottom: 50px;
+    list-style: none;
+    padding: 0;
+}
+
+.item-perfil {
+    width: 10vw;
+    min-width: 120px;
+    max-width: 200px;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ---------- AVATAR ---------- */
+
+.avatar-container {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icone-avatar {
+    width: 100%;
+    height: 100%;
+}
+
+.icone-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    outline: 2px solid transparent;
+    /* reserva espaço */
+    transition: outline-color 0.3s;
+}
+
+/* ---------- NOME ---------- */
+
+.nome-perfil {
+    font-size: 1.2vw;
+    margin-top: 8px;
+    color: #808080;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+/* ---------- HOVER UNIFICADO ---------- */
+
+.perfil:hover img {
+    outline-color: #fff;
+}
+
+.perfil:hover .nome-perfil {
+    color: #fff;
+}
+
+/* ---------- GERENCIAR ---------- */
+
+.gerenciar {
+    margin-top: 20px;
+}
+
+.botao-gerenciar {
+    background: transparent;
+    border: 1px solid grey;
+    color: grey;
+    padding: 10px 30px;
+    font-size: 1vw;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-weight: 200;
+    transition: all 0.3s;
+}
+
+.botao-gerenciar:hover {
+    border-color: #e5e5e5;
+    color: #e5e5e5;
+}
