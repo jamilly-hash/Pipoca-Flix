@@ -25,7 +25,7 @@ export const categories = [
         title: "Ficção científica",
         items: [
              {
-                img: "https://img.elo7.com.br/product/zoom/2678478/big-poster-filme-os-vingadores-2012-lo02-tamanho-90x60-cm-vingadores-ultimato.jpg", progress: 0,
+                img: "https://image.tmdb.org/t/p/w500/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg", progress: 0,
                 youtube: "https://www.youtube.com/watch?v=010zK4vO-QE"
             },
              {
@@ -50,7 +50,7 @@ export const categories = [
                 youtube: "https://www.youtube.com/watch?v=ZY1VXMg3tuo&list=PLtg1U4j3KuGzjuC9NxUj8CYkDtNOwqT_S"
             },
             {
-                img: "https://i.ytimg.com/vi/qkH-NBzbfq4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDpimV4ClMZ5atRMB5Doxkl2EPnqg", progress: 0,
+                img: "https://i.ytimg.com/vi/5DK_c2ZZMIU/hqdefault.jpg", progress: 0,
                 youtube: "https://www.youtube.com/watch?v=5DK_c2ZZMIU"
             },
             {
@@ -58,7 +58,7 @@ export const categories = [
                 youtube: "https://www.youtube.com/watch?v=dL037XPU6Rs"
             },
             {
-                img: "https://img.elo7.com.br/product/zoom/26576E3/big-poster-harry-potter-e-o-calice-de-fogo-lo01-90x60-cm-presente-nerd.jpg", progress: 0,
+                img: "https://image.tmdb.org/t/p/w500/fECBtHlr0RB3foNHDiCBXeg9Bv9.jpg", progress: 0,
                 youtube: "https://www.youtube.com/watch?v=jaALBSl9eS8"
             },
         ]
